@@ -1,0 +1,26 @@
+<!--start.wxml-->
+
+<button class="btn3" bindtap="getDataFromOneNight">亮度监测</button>
+
+<button class="btn1" bindtap="openlight">
+开灯</button>
+
+
+
+<button class="btn2" bindtap="closelight">
+
+关灯</button>
+
+
+
+<radio-group class="radio-group" bindchange="radioChange">
+
+  <label style="display: flex"  wx:for="{{items}}">
+
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+
+  </label>
+
+</radio-group>
+<view><image class="image" src="/image/233.jpg"></image>
+</view>
